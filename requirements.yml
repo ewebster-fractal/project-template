@@ -1,0 +1,15 @@
+name: airflow
+
+dependencies:
+  # The python interpreter version.
+  - python=3.5.2
+  - pip
+  - pandas
+  - numpy
+  - scikit-learn
+  - pyodbc  
+  - pip:
+    - apache-airflow
+    - azure-storage-blob
+    - azureml-sdk
+    - mlflow

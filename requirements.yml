@@ -9,6 +9,7 @@ dependencies:
   - scikit-learn
   - pyodbc  
   - pip:
+    - Flask
     - apache-airflow
     - azure-storage-blob
     - azureml-sdk

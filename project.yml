@@ -1,0 +1,9 @@
+name: sample_project
+
+conda_env: requirements.yml
+
+entry_points:
+  main:
+    parameters:
+      name: string
+    command: "python source/main.py {name}"

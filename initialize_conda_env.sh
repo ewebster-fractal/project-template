@@ -10,6 +10,7 @@ echo "Searching for conda environment named: ${my_env}"
 # 3) Recreate using requirements.yml file
 conda env list | cut -d' ' -f1 | if grep -q $my_env; then
 	echo "conda environment already exists.... deleting now"
+	conda deactivate
 	conda env remove -n $my_env
 	echo "recreating environment using updated requirements file"	
 else
